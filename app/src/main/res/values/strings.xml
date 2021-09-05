@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Pronounce The Word</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="enter_word">Enter Word</string>
+    <string name="pronounce">Pronunciation</string>
+    <string name="antonym">Antonym</string>
+    <string name="synonym">Synonym</string>
+    <string name="meaning">Meaning</string>
+</resources>

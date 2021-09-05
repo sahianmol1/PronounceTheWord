@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.fragments.MainFragment">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tlEnterWord"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_margin="16dp"
+        app:layout_constraintVertical_chainStyle="packed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnPronounce">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etEnterWord"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:backgroundTint="@color/color_white_black"
+            android:hint="@string/enter_word" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnPronounce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pronounce"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="true"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/custom_button_background"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tlEnterWord"
+        app:layout_constraintBottom_toTopOf="@+id/btnMeaning"/>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnMeaning"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/meaning"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="true"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        app:rippleColor="@color/design_default_color_primary_dark"
+        android:background="@drawable/custom_button_background"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/btnPronounce"
+        app:layout_constraintEnd_toEndOf="@+id/btnPronounce"
+        app:layout_constraintTop_toBottomOf="@+id/btnPronounce"
+        app:layout_constraintBottom_toTopOf="@+id/btnSynonym"/>
+
+
+    <Button
+        android:id="@+id/btnSynonym"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/synonym"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="true"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/custom_button_background"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/btnPronounce"
+        app:layout_constraintEnd_toEndOf="@+id/btnPronounce"
+        app:layout_constraintTop_toBottomOf="@+id/btnMeaning"
+        app:layout_constraintBottom_toTopOf="@+id/btnAntonym"/>
+
+
+    <Button
+        android:id="@+id/btnAntonym"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/antonym"
+        android:fontFamily="sans-serif-medium"
+        android:textAllCaps="true"
+        android:padding="8dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:background="@drawable/custom_button_background"
+        android:layout_marginTop="8dp"
+        app:layout_constraintStart_toStartOf="@+id/btnPronounce"
+        app:layout_constraintEnd_toEndOf="@+id/btnPronounce"
+        app:layout_constraintTop_toBottomOf="@+id/btnSynonym"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
